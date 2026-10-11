@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstraR6 — Making R6 Easier For You.</title>
+    <meta name="description" content="AstraR6 is the all-in-one R6 app to make the game easier">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- ============ FAVICON (browser tab icon) ============ -->
+    <!-- Primary: .ico (best compatibility — IE, older browsers, Windows taskbar pinning) -->
+    <link rel="shortcut icon" href="images/AstraR6.ico" type="image/x-icon">
+    <link rel="icon" href="images/AstraR6.ico" type="image/x-icon">
+    <!-- High-res PNG fallback for retina displays & new-tab page tiles -->
+    <link rel="icon" type="image/png" sizes="any" href="images/AstraR6Logo.png">
+    <!-- iOS / iPad home-screen icon (PNG, no transparency allowed) -->
+    <link rel="apple-touch-icon" href="images/AstraR6Logo.png">
+</head>
+<body>
+
+    <!-- ============ BACKGROUND PARTICLE NETWORK ============ -->
+    <canvas id="bg-network" aria-hidden="true"></canvas>
+
+    <!-- ============ HEADER / NAV ============ -->
+    <header class="site-header" id="top">
+        <div class="nav-container">
+            <a href="#top" class="logo" aria-label="AstraR6 home">
+                <img src="images/AstraR6Logo.png" alt="AstraR6" class="logo-mark">
+                <span class="logo-text">ASTRAR6</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Primary">
+                <a href="#features">FEATURES</a>
+                <a href="https://discord.gg/HkRcFyCrBM" class="nav-link-icon" target="_blank" rel="noopener" aria-label="Join our Discord">
+                    <img src="images/discordlogo.png" alt="Discord" class="discord-icon">
+                </a>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+        <div class="hero-grid">
+            <!-- LEFT: copy + CTAs -->
+            <div class="hero-copy">
+                <h1 class="hero-title">THE BEST EXTERNAL RAINBOW SIX SIEGE ALL IN ONE </h1>
+
+                <ul class="hero-features">
+                    <li><span class="tick" aria-hidden="true"></span> Built-in Recoil Scripts </li>
+                    <li><span class="tick" aria-hidden="true"></span> Built-in Customisable Macros </li>
+                    <li><span class="tick" aria-hidden="true"></span> Built-in Rapid Fire </li>
+                    <li><span class="tick" aria-hidden="true"></span> Built-in Key spammer</li>
+                    <li><span class="tick" aria-hidden="true"></span> Built-in Customisable themes </li>
+                </ul>
+
+                <div class="download-group">
+                    <button class="btn btn-primary" id="downloadWindows">
+                        <img src="images/windowslogo.png" alt="" class="windows-icon" aria-hidden="true">
+                        DOWNLOAD FOR <strong>WINDOWS</strong>
+                    </button>
+                </div>
+
+                <p class="hero-meta">Free to install · v2.4.1 Public Release · ~20 MB </p>
+            </div>
+
+            <!-- RIGHT: app screenshot -->
+            <div class="hero-preview" id="preview">
+                <div class="screenshot-frame">
+                    <div class="screenshot-bar">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="window-title">AstraR6 — Dashboard</span>
+                    </div>
+                    <img src="images/app-screenshot.png" alt="AstraR6 dashboard showing recoil control and active profile configuration" class="screenshot-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FEATURE CARDS ============ -->
+    <section class="features" id="features">
+        <div class="features-grid">
+            <article class="feature-card">
+                <div class="feature-icon">
+                    <!-- Recoil: upward kick arrow + bullet pattern below -->
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6,10 12,4 18,10"/>
+                        <line x1="12" y1="4" x2="12" y2="15"/>
+                        <line x1="5" y1="19" x2="19" y2="19"/>
+                        <line x1="8" y1="19" x2="8" y2="21"/>
+                        <line x1="12" y1="19" x2="12" y2="21"/>
+                        <line x1="16" y1="19" x2="16" y2="21"/>
+                    </svg>
+                </div>
+                <h3>Recoil Tab</h3>
+                <p>Enchance your gun skill with Built-in recoil scripts.</p>
+                <a href="#" class="feature-link">Learn more →</a>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon">
+                    <!-- Macro: keyboard key with a play triangle inside -->
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="6" width="18" height="12" rx="2"/>
+                        <polygon points="10,10 15,12 10,14" fill="currentColor" stroke="none"/>
+                        <line x1="6" y1="9" x2="6" y2="9.5"/>
+                        <line x1="6" y1="14.5" x2="6" y2="15"/>
+                        <line x1="18" y1="9" x2="18" y2="9.5"/>
+                        <line x1="18" y1="14.5" x2="18" y2="15"/>
+                    </svg>
+                </div>
+                <h3>Macro Tab</h3>
+                <p>Can't quick peek? no worry make a quick peek macro to enable with any shortcut for example mouse side buttons.</p>
+                <a href="#" class="feature-link">Learn more →</a>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon">
+                    <!-- Rapid Fire: lightning bolt -->
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="13,2 4,14 10,14 9,22 20,10 14,10"/>
+                    </svg>
+                </div>
+                <h3>Rapid Fire Tab</h3>
+                <p>Beam people with a DMR or a TCSG across the map with crazy fire rate.</p>
+                <a href="#" class="feature-link">Learn more →</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="images/AstraR6Logo.png" alt="AstraR6" class="logo-mark footer-logo-mark">
+                <span>ASTRAR6</span>
+            </div>
+            <p class="footer-disclaimer">Not affiliated with or endorsed by Ubisoft. Rainbow Six Siege is a trademark of Ubisoft Entertainment. AstraR6 is not related with any means to Ubisoft.</p>
+            <p class="footer-copy">© 2026 AstraR6 Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
